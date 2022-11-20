@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Nav, NavItem, NavLogo } from "./nav/NavComponents";
-import { FaBars } from "react-icons/fa";
 
 export const NavBar = () => {
   useEffect(() => {
@@ -31,7 +30,7 @@ export const NavBar = () => {
   return (
     <Nav>
       <NavLogo to="/">
-        <span>Portfolio</span>
+        <span>DasIschBims</span>
       </NavLogo>
       <ul>
         <NavItem to="/">Home</NavItem>
