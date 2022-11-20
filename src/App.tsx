@@ -23,7 +23,7 @@ function App() {
     );
   } else {
     return (
-      <BrowserRouter basename="/portfolio/">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
