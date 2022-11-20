@@ -9,6 +9,10 @@ export const NavHamburgerWrapper = styled.div`
   padding: 0.5rem;
   border-radius: 30%;
   z-index: 100;
+
+  @media screen and (min-width: ${DeviceSize.mobile}px) {
+    display: none;
+  }
 `;
 
 export const BlurWrapper = styled.div`
@@ -46,20 +50,24 @@ export const HamburgerButton = styled(Link)`
   outline: none;
   cursor: pointer;
   color: #282c34;
-  background-color: #fe5573;
   border-radius: 30%;
   font-size: 3rem;
   padding: 0.5rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 0 5px #fe5573ed, 0 0 10px #fe5573ed, 0 0 20px #fe5573ed;
   z-index: 100;
   margin-bottom: 0.8rem;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   &:hover {
     color: #fe5573;
+    background-color: #282c34;
   }
   svg {
     scale: 0.8;
+  }
+
+  @media (max-width: ${DeviceSize.mobile}px) {
+    background-color: #fe5573;
+    box-shadow: 0 0 5px #fe5573ed, 0 0 10px #fe5573ed, 0 0 20px #fe5573ed;
   }
 `;

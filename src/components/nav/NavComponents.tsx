@@ -38,10 +38,6 @@ export const NavLogo = styled(Link)`
     color: #fe5573;
     text-shadow: 0 0 10px #fe5573ed, 0 0 20px #fe5573ed, 0 0 40px #fe5573ed;
   }
-
-  @media (max-width: ${DeviceSize.mobile}px) {
-    font-size: 1.2rem;
-  }
 `;
 
 export const NavItem = styled(Link)`
