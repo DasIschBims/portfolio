@@ -10,7 +10,7 @@ export const Footer = () => {
       <FooterContent>
         <FooterLink
           onClick={() =>
-            (window.location.href = "https://github.com/DasIschBims/website")
+            (window.location.href = "https://github.com/DasIschBims/portfolio")
           }
         >
           Repository

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { PulseLoader } from "react-spinners";
 import "./App.css";
+import { NotFound404 } from "./pages/404";
 import { AboutPage } from "./pages/AboutPage";
 import { HomePage } from "./pages/HomePage";
 import { ProjectsPage } from "./pages/ProjectsPage";
@@ -27,6 +28,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/404" element={<NotFound404 />} />
+        <Route path="*" element={<NotFound404 />} />
       </Routes>
     );
   }

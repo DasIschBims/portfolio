@@ -34,9 +34,9 @@ export const NavBar = () => {
         <span>Portfolio</span>
       </NavLogo>
       <ul>
-        <NavItem to="/portfolio/">Home</NavItem>
-        <NavItem to="/portfolio/about">About</NavItem>
-        <NavItem to="/portfolio/projects">Projects</NavItem>
+        <NavItem to="/">Home</NavItem>
+        <NavItem to="/about">About</NavItem>
+        <NavItem to="/projects">Projects</NavItem>
       </ul>
     </Nav>
   );
