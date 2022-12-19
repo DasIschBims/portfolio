@@ -14,6 +14,10 @@ const routes = [
     path: "/404",
     element: <NotFound404 />,
   },
+  {
+    path: "*",
+    element: <NotFound404 />,
+  },
 ];
 
 const router = createBrowserRouter(routes, {});

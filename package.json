@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dasischbims.github.io/portfolio/",
+  "homepage": "https://dasischbims.dev/",
   "type": "module",
   "scripts": {
     "dev": "vite",
