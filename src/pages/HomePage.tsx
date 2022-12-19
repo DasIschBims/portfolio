@@ -21,16 +21,16 @@ export const HomePage = () => {
         }}
       >
         <TextBox>
-          Hey there! I'm a self taught german developer that does some coding in
-          his spare time.
+          Hey there! I'm a German, self-taught developer that does some coding
+          in his spare time.
           <br />
           <br />
-          I'm familiar with Javascript, Typescript, Java, Kotlin and a little
-          bit of C#.
+          I'm familiar with JavaScript, Typescript, Java, Kotlin and a bit of
+          C#.
           <br />
           <ProfilePictureMobile src="/profile-picture.png" />
           <br />
-          Feel free to check out my socials or my projects on github via the
+          Feel free to check out my socials or my projects on GitHub via the
           link in the navbar.
           <br />
           <ProfilePicture src="/profile-picture.png" />
