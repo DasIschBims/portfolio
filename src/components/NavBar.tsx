@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Nav, NavItem, NavLogo } from "./nav/NavComponents";
+import { HamburgerMenu } from "./Hamburger";
 
 export const NavBar = () => {
   useEffect(() => {
@@ -24,9 +25,6 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
-  // TODO: Make current page link light up
-  // TODO: Add a hamburger menu for mobile
-
   return (
     <Nav>
       <NavLogo to="/">
@@ -34,9 +32,9 @@ export const NavBar = () => {
       </NavLogo>
       <ul>
         <NavItem to="/">Home</NavItem>
-        <NavItem to="/about">About</NavItem>
-        <NavItem to="/projects">Projects</NavItem>
+        <NavItem to="/socials">Socials</NavItem>
       </ul>
+      <HamburgerMenu />
     </Nav>
   );
 };

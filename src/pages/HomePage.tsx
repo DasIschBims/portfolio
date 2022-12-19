@@ -1,19 +1,17 @@
 import { Footer } from "../components/Footer";
 import { HamburgerMenu } from "../components/Hamburger";
-import {
-  BlurWrapper,
-  HamburgerButton,
-  HamburgerButtonWrapper,
-} from "../components/nav/HamburgerComponents";
 import { NavBar } from "../components/NavBar";
+import {
+  ProfilePicture,
+  ProfilePictureMobile,
+} from "../components/ProfilePicture";
+import { TextBox } from "../components/Text";
 import { Wrapper } from "../components/Wrapper";
 
 export const HomePage = () => {
   return (
     <>
       <NavBar />
-      <HamburgerMenu />
-      <BlurWrapper id="blur-wrapper" />
       <Wrapper
         style={{
           minHeight: "100vh",
@@ -22,17 +20,22 @@ export const HomePage = () => {
           maxWidth: "70vw",
         }}
       >
-        <p>coming soon...</p>
-        <p>home</p>
+        <TextBox>
+          Hey there! I'm a self taught german developer that does some coding in
+          his spare time.
+          <br />
+          <br />
+          I'm familiar with Javascript, Typescript, Java, Kotlin and a little
+          bit of C#.
+          <br />
+          <ProfilePictureMobile src="/profile-picture.png" />
+          <br />
+          Feel free to check out my socials or my projects on github via the
+          link in the navbar.
+          <br />
+          <ProfilePicture src="/profile-picture.png" />
+        </TextBox>
       </Wrapper>
-      <Wrapper
-        style={{
-          minHeight: "100vh",
-          marginLeft: "auto",
-          marginRight: "auto",
-          maxWidth: "70vw",
-        }}
-      />
       <Footer />
     </>
   );

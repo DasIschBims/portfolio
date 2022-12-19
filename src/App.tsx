@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { PulseLoader } from "react-spinners";
 import "./App.css";
-import { NotFound404 } from "./pages/404";
-import { AboutPage } from "./pages/AboutPage";
+import { SocialsPage } from "./pages/SocialsPage";
 import { HomePage } from "./pages/HomePage";
-import { ProjectsPage } from "./pages/ProjectsPage";
+import { Send404 } from "./utils/404";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,6 +14,8 @@ function App() {
       setLoading(false);
     }, 800);
   }, []);
+
+  useEffect(() => {}, []);
 
   if (loading) {
     return (
@@ -26,10 +27,8 @@ function App() {
     return (
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/404" element={<NotFound404 />} />
-        <Route path="*" element={<NotFound404 />} />
+        <Route path="/socials" element={<SocialsPage />} />
+        <Route path="*" element={<Send404 />} />
       </Routes>
     );
   }

@@ -1,7 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { DeviceSize } from "../responsive";
+import { DeviceSize } from "../../utils/responsive";
 
 export const Nav = styled.nav`
   display: flex;
@@ -34,9 +34,11 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   font-size: 1.5rem;
   transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
-  &:hover {
-    color: #fe5573;
-    text-shadow: 0 0 10px #fe5573ed, 0 0 20px #fe5573ed, 0 0 40px #fe5573ed;
+  color: #fe5573;
+  text-shadow: 0 0 15px #fe5573ed, 0 0 20px #fe5573ed, 0 0 40px #fe5573ed;
+
+  @media (max-width: ${DeviceSize.mobile}px) {
+    text-shadow: 0 0 10px #fe5573ed, 0 0 20px #fe5573ed !important;
   }
 `;
 

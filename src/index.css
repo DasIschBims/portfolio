@@ -37,3 +37,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #fe5574b7;
 }
+
+.noDrag {
+  -webkit-app-region: no-drag;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+.noSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
