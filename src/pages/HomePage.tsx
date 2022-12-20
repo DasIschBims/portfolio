@@ -28,12 +28,15 @@ export const HomePage = () => {
           I'm familiar with JavaScript, Typescript, Java, Kotlin and a bit of
           C#.
           <br />
-          <ProfilePictureMobile src="/profile-picture.png" />
+          <ProfilePictureMobile
+            src="/profile-picture.png"
+            alt="profile picture"
+          />
           <br />
           Feel free to check out my socials or my projects on GitHub via the
           link in the navbar.
           <br />
-          <ProfilePicture src="/profile-picture.png" />
+          <ProfilePicture src="/profile-picture.png" alt="profile picture" />
         </TextBox>
       </Wrapper>
       <Footer />
