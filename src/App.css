@@ -12,4 +12,10 @@
 
 #root {
   min-height: 100vh;
+  background-image: url("/background.jpg");
+  /* Background Source: https://www.pexels.com/photo/green-leaves-1072179/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

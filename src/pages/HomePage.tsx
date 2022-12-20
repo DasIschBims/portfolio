@@ -21,7 +21,7 @@ export const HomePage = () => {
         }}
       >
         <TextBox>
-          Hey there! I'm a German, self-taught developer that does some coding
+          Hey there! I'm a German, self-taught, developer that does some coding
           in his spare time.
           <br />
           <br />

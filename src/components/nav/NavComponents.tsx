@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   padding: 0 2rem;
   background-color: transparent;
   color: #fff;
+  background-color: #00000080;
   height: 5rem;
   font-size: 1.2rem;
   font-weight: 700;

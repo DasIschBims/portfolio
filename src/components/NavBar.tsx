@@ -16,7 +16,7 @@ export const NavBar = () => {
         `;
       } else if (nav) {
         nav.style.cssText = `
-          background-color: transparent;
+          background-color: #00000080;
           height: 5rem;
         `;
       }
